@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://wao-letscode.com/playground/board/34288/ -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./商品紹介_files/exec-handler.c40be1d7c080.js.ダウンロード"></script><!--<base href="/">--><base href=".">
+<link href="./商品紹介_files/font-awesome.min.css" rel="stylesheet">
+
+<title>商品紹介</title>
+<style>.q{
+  color: white
+}
+.btn-submit{
+  background-color: blue;
+  opacity: 0.8;
+  color: white;
+}
+.hu span{
+  font-size: 10px;
+}
+.daihuku{
+  font-weight: bold;
+  font-size: 150px;
+}
+.section-content button{
+  width: 100px;
+  height: 60px;
+  font-size: 20px;
+}
+.kyoto{
+  padding-top: 20px;
+}
+.read-button{
+  font-size: 23px;
+  display:inline;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #5dca88;
+  box-shadow: 0 6px #1a7940;
+  color: white;
+  cursor: pointer;
+}
+.btn{
+  box-shadow: 0 6px cornflowerblue;
+}
+
+body{
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+}
+.container-introduce{
+  text-align: center;
+  padding-top: 120px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 90;
+}
+.container-form{
+  position: fixed;
+  top: 0px;
+  padding-top: 150px;
+  height: 100%;
+  width: 100%;
+  z-index: 89;
+  background-color :white;
+}
+.btn-introduce{
+  
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  background-color: #5dca88;
+  box-shadow: 0 10px #1a7940;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 1;
+}
+.btn:active{
+  box-shadow: none;
+  position: relative;
+  top:10px;
+  left:0px;
+}
+.kyoto span{
+  color: #1a7940;
+}
+.daihuku h3{
+  font-size: 100px;
+}
+
+.go-back{
+  width: 100px;
+  
+}
+
+.container h3{
+  padding-top: 150px;
+  font-size: 50px;
+}
+.container{
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  position: fixed;
+  z-index: 99;
+}
+.none{
+  display: none;
+}
+.content-none{
+  display:  none;
+}
+.content-active{
+  display: block;
+}
+.inline-block{
+  display: inline－block;
+}
+.text-form{
+  height: 40px;
+  width: 350px;
+  font-size :30px;
+}
+.question-bord button{
+  height: 30px;
+  width: 80px;
+}
+.question-bord h1{
+  font-size: 70px;
+}
+.none{
+  display:none;
+}
+.question-bord h1{
+  padding-top: 140px;
+}
+.head-container {
+  color:white;
+  height: 147px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position: fixed;
+  top: 0px;
+  Z-index: 100;
+}
+.content-icon-p{
+  display:inline-block;
+}
+.header-left {
+  float: left;
+  font-size: 35px;
+  padding-top: 0px;
+  padding-left: 20px;
+}
+.header-right {
+  float: right;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.header-right span{
+  color: aquamarine;
+}
+.main{
+  padding-top: 120px;
+  background-size: cover;
+  background-image: url(https://www.mistore.jp/on/demandware.static/-/Sites-seamless-Library/ja_JP/dw3c6a611b/content/feature/foods_f3/demachifutaba_f/images/1248_demachi_top-.jpg);
+}
+.introduce{
+  text-align: center;
+}
+.introduce p{
+  font-size: 25px
+}
+.introduce h2{
+  font-size: 45px
+}
+.saishonoshoukai span{
+  color: green;
+}
+.facebook{
+  background-color: #3b5998;
+   margin-right:10px;
+   padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+}
+.facebook:hover{
+  opacity: 1.0;
+}
+.LINE{
+  background-color:#239b76;
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+}
+.LINE:hover{
+  opacity: 1.0;
+}
+.btn-wrapper{
+  margin: 20px;
+  text-align: center;
+}
+.main-last{
+  text-align: center;
+}
+.main-last h3{
+  font-size: 40px;
+}
+.main-last span{
+  color: green;
+}
+.contents-wrapper{
+  text-align: center;
+  display: block;
+}
+.contents-wrapper h1{
+  color: red;
+  font-size: 80px;
+  text-align: center;
+}
+.content-icon{
+  position: relative;
+}
+.content h3{
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.content{
+  
+  display: none;
+  padding-left: 1%;
+  float: left;
+  width: 22%;
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+  border-bottom: 5px solid #dee7ec;
+}
+.content-active{
+  display: block;
+  
+  width: 100%;
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+  border-bottom: 5px solid #dee7ec;
+}
+.index-btn{
+  display: inline-block;
+  background-color: aqua;
+  opacity: 0.7;
+  border-radius: 4px;
+  box-shadow: 0 5px skyblue;
+  color: white;
+  padding: 5px 15px ;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  
+}
+.index-btn-active{
+  display: inline-block;
+  background-color: orange;
+  opacity: 0.7;
+  border-radius: 4px;
+  box-shadow: 0 5px red;
+  color: white;
+  padding: 5px 15px ;
+  
+  margin-bottom: 30px;
+}
+.content-icon-second{
+  position: relative;
+}
+.content-second p{
+   position: absolute;
+  top: 80px;
+  width: 100%;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+.content-second h3{
+  font-size: 25px;
+}
+.content-right-second{
+  float: right;
+  padding-right: 15px;
+}
+.detail{
+  border-bottom: 2px solid white;
+}
+
+.content-second{
+  padding-top: 170px;
+  
+  position: relative;
+}
+.content-icon-second{
+  text-align: center;
+}
+.content-icon-second p{
+   position: absolute;
+  top: 80px;
+  width: 100%;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+.hutaba-img{
+  height: 350px;
+  width: 444px;
+}
+.crowd span{
+  font-size: 17px;
+}
+.THE span{
+  font-size: 35px;
+  color: green;
+}
+.tapper{
+  height: 400px;
+  width: 400px;
+}
+.hutaba-hunnniki{
+  height:280px;
+  padding: 1%;
+  width: 30%;
+}
+.waiting span{
+  font-size: 17px;
+}
+.wagasi span{
+  font-size: 15px;
+}
+.meibutu {
+  font-size: 35px;
+}
+.meibutu span{
+  font-size: 75px;
+  color: red;
+}
+.mamedaihuku-first{
+  padding-left: 50px;
+  height:330px;
+  width: 360px;
+}
+.mamedaihuku-second{
+  padding-left: 50px;
+  height:330px;
+  width: 430px;
+}
+.others-moti{
+  padding : 1%;
+  height: 160px;
+  width : 17%;
+}
+.goods span{
+  font-size: 41px;
+  color: orange;
+}
+.guzai span{
+  font-size: 50px;
+  color: red;
+}
+.evolution span{
+  font-size: 37px;
+  color: red;
+}
+.answer span{
+  color: #239b76;
+}
+.howtomake span{
+  font-size: 50px;
+  color: red;
+}
+
+.making-img{
+  padding: 2%;
+  width: 30%;
+  height:280px;
+}
+.nidoduke span{
+  font-size: 28px;
+  color:burlywood;
+}
+.shokuninn span{
+  font-size: 33px;
+  color: red;
+}
+footer{
+  width:100%;
+  padding-top:7px;
+  background-color: #dee7ec;
+  text-align: center;
+}
+footer span{
+  color: green;
+  font-size: 37px;
+}
+
+.box {
+  margin-top   : 300px;
+  width        : 0px;
+  height       : 1px;
+  background   : white;
+}
+.faq-list-item {
+  margin:1px;
+  border-bottom:1px solid #ccc;
+  position:relative;
+  cursor:pointer;
+  text-align: left;
+}
+.FQ{
+  text-align: center;
+  font-size: 40px;
+}
+.faq-list-item h3 {
+  font-size: 14px;
+}
+
+.faq-list-item span {
+  position:absolute;
+  top:0;
+  right:5px;
+  color:#ccc;
+  font-size:13px;
+}
+
+.answer {
+  font-size: 25px;
+  padding: 5px 0px;
+  margin-bottom: 0px;
+  display: none;
+}
+.go-back{
+  font-size: 50px;
+  cursor: pointer;
+  background-color: orange;
+  opacity: 0.7;
+  border-radius: 4px;
+  box-shadow: 0 5px red;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}</style>
+<script src="./商品紹介_files/jquery.min.js.ダウンロード"></script>
+<script>window.LetsCode.htmlName = 'index.html';</script></head>
+<body><div id="letscode-errors"><input id="letscode-toggle" type="checkbox" hidden=""><label for="letscode-toggle">メッセージを</label><ul id="letscode-error-list"><li>Log: index.html</li></ul></div>
+<div class="container-introduce none">
+<div class="kyoto"><h2>今回、紹介するのは、<span>京都の「出町ふたば」</span>という店の</h2></div>
+<div class="daihuku">大福です!</div>
+<h2>夏休みに京都に行って、めっちゃおいしかったので、今回はみんなに紹介できたらいいなぁ～～</h2>
+<div class="hu">
+<h2>と、思っています(｀・ω・´)  <span>↓↓「ふたば」のホームページ</span></h2>
+</div>
+<a class="btn-introduce">さっそく紹介!</a>
+<a class="home" href="http://wagashi-futaba.jp/">「出町ふたば」のホームページ</a>
+</div>
+<div class="container-form none">
+<div class="section-title">
+<h3>名前を教えてください！</h3>
+</div>
+<div class="section-content">
+<form class="form" id="form">
+<div class="form-group">
+<div>your name：</div>
+<textarea class="text-form" id="text-form"></textarea>
+</div>
+<button class="btn btn-submit" type="submit" style="box-shadow: none;">送信</button>
+</form>
+</div>
+</div>
+<div class="head-container">
+<div class="header-left">
+<h2>こうちゃんブログ</h2>
+</div>
+<div class="header-right">
+<ul>
+<li class="skipfirst">はじめての<span class="G">「ふたば」</span></li>
+<li class="skipsecond">店の雰囲気(^^♪</li>
+<li class="skipthird">店のいろんなの商品</li>
+<li class="skipfourth"><span class="G">「出町ふたば」</span>のこだわり</li>
+<li class="skipstart">↑BACK↑</li>
+</ul>
+</div>
+</div>
+<div class="main">
+<div class="introduce">
+<p><span class="output-text"></span>さん、こんにちは‼︎</p>
+<div class="saishonoshoukai"><h2>今日は<span>「出町ふたば」の大福</span>を</h2></div>
+<h2>4つの観点でみなさんに紹介していきます！</h2>
+<p><span class="output-text"></span>さんも、今回の紹介を見て、いきたくなったらぜひ行ってみてください！</p>
+<p>↓↓「出町ふたば」の  Facebook・LINE</p>
+</div>
+<div class="btn-wrapper">
+<a class="facebook"><span class="fa fa-facebook"></span> Facebookで登録</a>
+<a class="LINE">LINEで登録</a>
+</div>
+<div class="main-last">
+<h3>それでは、今から<span>「出町ふたば」</span>の紹介を していきます</h3>
+<h3>↓↓ GO TO INTRODUCE CORNER ↓↓</h3>
+</div>
+</div>
+
+　<ul id="faq-list">
+<div class="FQ"><h3>Q&amp;A</h3></div>
+  　<li class="faq-list-item">
+<h3 class="question">出町ふたばの電話番号は？</h3>
+<span>+</span>
+  　 <div class="answer">
+<p>075-231-1658です。電話予約すると豆餅を並ばず買えます！</p>
+</div>
+</li>
+<li class="faq-list-item">
+<h3 class="question">人気商品は？</h3>
+<span>+</span>
+<div class="answer">
+<p>3位、饅頭(夏限定)　　2位、よもぎ餅　　1位、豆餅(看板商品！！)</p>
+</div>
+</li>
+<li class="faq-list-item">
+<h3 class="question">実際、値段はいくら？</h3>
+<span>+</span>
+      　<div class="answer">
+<p>一個180円！ちょっと高い... まあそれでも人気ってことはそれだけうまいってこと！(#^^#)</p>
+    　 </div>
+</li>
+</ul>
+<div class="contents-wrapper">
+<h1>Today`s TOPIC!!</h1>
+<h2><span class="output-text"></span>さん、まずは下の青いボタンを押して、タイトルを確認してください！</h2>
+<div class="index-btn-wrapper">
+<div class="index-btn index-btn-active">1</div>
+<div class="index-btn">2</div>
+<div class="index-btn">3</div>
+<div class="index-btn">4</div>
+</div>
+<ul class="contents">
+<li class="content content-active">
+<div class="content-icon">
+<img src="./商品紹介_files/html.png">
+<div id="content-icon-p"><h3>はじめての「ふたば」</h3></div>
+</div>
+<p>僕がふたばに行って感じた事などを</p>
+<p>話していきます</p>
+<p class="skipfirst read-button">さっそく、読む！(ここをタップ)</p>
+</li>
+<li class="content">
+<div class="content-icon">
+<img src="./商品紹介_files/jQuery.png">
+<div id="content-icon-p"><h3>店の雰囲気</h3></div>
+</div>
+<p>店の中を写真などを使って、紹介します！</p>
+<p class="skipsecond read-button">さっそく、読む！(ここをタップ)</p>
+</li>
+<li class="content">
+<div class="content-icon">
+<img src="./商品紹介_files/ruby.png">
+<div id="content-icon-p"><h3>いろんな商品</h3></div>
+</div>
+<p>店にある、豆大福はもちろん、様々な商品を紹介します！</p>
+<p class="skipthird read-button">さっそく、読む！(ここをタップ)</p>
+</li>
+<li class="content">
+<div class="content-icon">
+<img src="./商品紹介_files/php.png">
+<div id="content-icon-p"><h3>「ふたば」のこだわり</h3></div>
+</div>
+<p>長い歴史をもつ老舗『ふたば』だからこそのこだわりを紹介</p>
+<p class="skipfourth read-button">さっそく、読む！(ここをタップ)</p>
+</li>
+</ul>
+</div>
+<div class="detail">
+<h1>それでは、今から、紹介していきます！</h1>
+<div class="content-second" id="first-content-icon">
+<div class="content-icon-second">
+<img src="./商品紹介_files/html.png">
+<p>初めてのふたば</p>
+</div>
+<div class="content-sentence">  
+        
+  　　　<h2>早速ですが<span class="output-text"></span>さんは夏休みにどこに行きましたか？</h2><h2>
+</h2><h2>僕は京都にいろんなお寺やお菓子屋、大学等を見に旅行に行っていました！</h2>
+<h2>僕が京都に旅行に行った時、</h2><div class="wagasi">
+<h2>「おいしい大福屋さん、ないかなぁ～」と思って調べると、<span>ps(高岡は和菓子大好き(/・ω・)/)</span></h2></div>
+<h2>京都駅から５駅離れたところにある今出川駅という駅の近くに良い店があると聞き、行ってみました</h2>
+<h2>明治32年から続く老舗ということで、「不味いわけがない！！」と思い、</h2>
+<div class="crowd">
+<h2>行ってみると、開店時間から2,3分しか、たっていなかったのに、すごい行列でした！ <span>すごい人気...( ﾟДﾟ)</span></h2>
+</div>
+<h2>客層は、現地の人だけでなく、遠方から足を運ぶ人も大勢おり、観光目的の外国人も多くいました！</h2>
+<img class="hutaba-img" src="./商品紹介_files/f750_750_60_sharpen">
+<img class="hutaba-img" src="./商品紹介_files/f750_750_60_sharpen(1)">
+<div class="THE">
+<h2>お店の外観も<span>「ザ・京都」</span>って感じで、めっちゃオシャレでした。</h2>
+</div>
+<h3>ちなみに、タッパーはこんな感じ↓↓</h3><h3>
+<img class="tapper" src="./商品紹介_files/f750_750_60_sharpen(2)">
+<img class="tapper" src="./商品紹介_files/f750_750_60_sharpen(3)">
+</h3><h2>和風さと一種のかわいさがあって、個人的にはめっちゃ好きなデザインです！</h2>
+<h2>それでは、つぎはお店の中身などをおはなししていきます！　　↓↓↓↓</h2>
+</div>
+</div>
+<div class="content-second" id="second-content-icon">
+<div class="content-icon-second">
+<img src="./商品紹介_files/jQuery.png">
+<p>店の雰囲気</p>
+</div>
+<div class="content-sentence">
+<h1>まず、お店の雰囲気はこんな感じです！！</h1>
+<img class="hutaba-hunnniki" src="./商品紹介_files/f750_750_60_sharpen(4)">
+<img class="hutaba-hunnniki" src="./商品紹介_files/f750_750_60_sharpen(5)">
+<img class="hutaba-hunnniki" src="./商品紹介_files/f750_750_60_sharpen(6)">
+<h2>写真だけだと、あんまり伝わらないかもしれませんが、中はめっちゃ広いです。</h2>
+<h2>僕が見た感じ、店員さんが２０人ぐらいいて、僕たちのために大福を作ってくれています。</h2>
+<h2>並んでいるときに、おまんじゅうや大福を作っているところを見ることができ、</h2>
+<div class="waiting"><h2>それを見てるだけでもめっちゃ楽しいです!!(*´ω｀*)       <span>       まあ、15分くらい待たなアカンけど...</span></h2></div>
+<h2>他にも、奥のほうで餅をついていたりして、お店のなかの雰囲気も京都の街とマッチしています。</h2>
+<h2>京都に旅行に行ったときのおススメスポットです!!</h2>
+</div>
+</div>
+<div class="content-second" id="third-content-icon">
+<div class="content-icon-second">
+<img src="./商品紹介_files/ruby.png">
+<p>いろんな商品</p>
+</div>
+<div class="content-sentence">
+<h2>次は様々な店の商品について話していきます！</h2>
+<div class="meibutu"><h2>まず、ふたば名物の<span>名代　豆餅!!</span></h2></div>
+<img class="mamedaihuku-first" src="./商品紹介_files/f750_750_60_sharpen(7)">
+<img class="mamedaihuku-second" src="./商品紹介_files/723_1653031976.jpeg">
+<h2>この豆大福がおいしいと、有名ですが、これ以外にも様々な商品が売っており、</h2>
+<h2>よもぎ餅や柏餅など、さまざまな和菓子が売っており、どれも、高レビューです!!</h2>
+<img class="others-moti" src="./商品紹介_files/f750_750_60_sharpen(8)">
+<img class="others-moti" src="./商品紹介_files/a750_60_sharpen">
+<img class="others-moti" src="./商品紹介_files/f750_750_60_sharpen(9)">
+<img class="others-moti" src="./商品紹介_files/0000143012-11635662882.jpg">
+<img class="others-moti" src="./商品紹介_files/159872-04.jpg">
+<h2>この説明だけだと、おまんじゅうや大福などだけしか、売っていなかったように聞こえるかもしれませんが、</h2>
+<div class="goods"><h2>ほかにも、どら焼きやだんご、ようかんなど   <span>たくさんの和菓子が売られています!!</span></h2></div>
+</div>
+</div>
+<div class="content-second" id="fourth-content-icon">
+<div class="content-icon-second">
+<img src="./商品紹介_files/php.png">
+<p>「ふたば」のこだわり</p>
+</div>
+<div class="content-sentence">
+<h2>最後は、「出町ふたば」だからこその、ほかの店にはないこだわりを紹介します！(#^^#)</h2>
+<div class="guzai">
+<h1>まず、最初のこだわりポイントはやっぱり<span>厳選された具材</span></h1>
+</div>
+<h2>なかでも、食感の重要なアクセントである「赤えんどう」は特にこだわっており、国産なのはもちろん、</h2>
+<h2>北海道の美瑛や富良野の契約農家から、特別に大きく甘みのある豆を選び抜いて送ってもらっているそう('Д')</h2>
+<h2>あんは、北海道・十勝産の小豆を、お餅は滋賀羽二重もち米の新米を使用。</h2>
+<span class="evolution"><h2>農業技術の進化によって、<span>お米の質は昔よりもさらに良くなっている</span>そうです!</h2>
+<div class="howtomake"><h1>他にも<span>作り方や炊き方</span>にも、かなりこだわっており、</h1>
+</div>
+<h2>しっかり素材のよさを生かせるために昔ながらの製法で作っているそう！</h2>
+<img class="making-img" src="./商品紹介_files/f750_750_60_sharpen(10)">
+<img class="making-img" src="./商品紹介_files/b2678f1e.jpg">
+<h2>調理するときも、良い見た目を保ち、さらに食べやすいように、</h2>
+<h2>一つ一つ丁寧に和菓子を成形していくそうです！</h2>
+<div class="nidoduke">
+<h2>具材などを作るときも<span>「二度づけ」</span>という方法で、２度にわけて丁寧に作り、餅がきめ細かくなるそうです！</h2>
+</div>
+<h2>実際、食べてみると、ほんとに食べやすいです！！</h2>
+    　　  <div class="shokuninn"><h2>職人さんによると<span>「素材の持つ風味を大切にするために、触り過ぎないことが大事!」</span></h2>
+<h2>なのだそう</h2>
+<h2>熟練の職人さんたちが、瞬く間に作り上げていく早業は見事です。(≧◇≦)</h2>
+</div>
+</span></div>
+</div>
+</div>
+<footer>
+<h1>これで、僕の紹介は終わりです！</h1>
+<h2>今回の紹介で「おいしそうだなぁ～、行ってみたいなぁ～」と思ってもらえたら、幸いです！！</h2>
+<h2><span class="output-text"></span>さんも、次、京都に行った時は<span>出町ふたば</span>に行ってみてください！</h2>
+<div class="go-back">↑GO BACK(ここを押すと最初に戻れます！)</div>
+</footer>
+<!-- jqueryゾーンここから -->
+　<script>$('.btn').click(function () {
+  $('.btn').css('box-shadow', 'none');
+});</script>
+　<script>$('.go-back').click(function () {
+  $('.content-sentence').removeClass('open');
+  $('.content-sentence').slideDown();
+});</script>
+<script>$(function () {
+  $('.content-second').click(function () {
+    var $answer = $(this).find('.content-sentence');
+    if ($answer.hasClass('open')) {
+      $answer.removeClass('open');
+      $answer.slideDown();
+    } else {
+      $answer.addClass('open');
+      $answer.slideUp();
+    }
+  });
+});</script>
+<script>$('.faq-list-item').click(function () {
+  var $answer = $(this).find('.answer');
+  if ($answer.hasClass('open')) {
+    $answer.removeClass('open');
+    $answer.slideUp();
+    $(this).find('span').text('+');
+  } else {
+    $answer.addClass('open');
+    $answer.slideDown();
+    $(this).find('span').text('-');
+  }
+});</script>
+<script>$(function () {
+  $('.skipfirst').click(function () {
+    var position = $('#first-content-icon').offset().top;
+    $('html,body').animate({ 'scrollTop': position });
+  });
+});</script>
+<script>$(function () {
+  $('.skipsecond').click(function () {
+    var position = $('#second-content-icon').offset().top;
+    $('html,body').animate({ 'scrollTop': position });
+  });
+});</script>
+<script>$(function () {
+  $('.skipthird').click(function () {
+    var position = $('#third-content-icon').offset().top;
+    $('html,body').animate({ 'scrollTop': position });
+  });
+});</script>
+<script>$(function () {
+  $('.skipfourth').click(function () {
+    var position = $('#fourth-content-icon').offset().top;
+    $('html,body').animate({ 'scrollTop': position });
+  });
+});</script>
+<script>$('.skipstart').click(function () {
+  $('html,body').animate({ 'scrollTop': 0 }, 1333);
+});</script>
+<script>$('.go-back').click(function () {
+  $('html,body').scrollTop(0);
+});</script>
+<script>$('#form').submit(function () {
+  $('html,css').scrollTop(0);
+  var textValue = $('#text-form').val();
+  $('.output-text').text(textValue);
+  $('.container').addClass('none');
+  alert('Thank you for answering your name!');
+  return false;
+});</script>
+<script>$('#form').submit(function () {
+  var textValue = $('#text-form').val();
+  $('.output-text').text(textValue);
+  $('.container-form').addClass('none');
+  $('html,css').scrollTop(0);
+});</script>
+<script>$('.index-btn').click(function () {
+  $('.content-active').removeClass('content-active');
+  var clickedIndex = $('.index-btn').index($(this));
+  $('.content').eq(clickedIndex).addClass('content-active');
+});</script>
+<script>$('.index-btn').click(function () {
+  $('.index-btn-active').removeClass('index-btn-active');
+  var clickedIndexact = $('.index-btn').index($(this));
+  $('.index-btn').eq(clickedIndexact).addClass('index-btn-active');
+});</script>
+<script>$('.daihuku').click(function () {
+  $('.daihuku').css('color', 'black');
+  $('.daihuku').css('font-weight', 'bold');
+  $('.daihuku').css('font-size', '120px');
+});
+$('.home').hover(function () {
+  $('.home').css('background-color', '#a9ceec');
+}, function () {
+  $('.home').css('background-color', 'white');
+});</script>
+<script>$('.btn-introduce').click(function () {
+  $('.container-introduce').addClass('none');
+  $('.container-form').removeClass('none');
+  'html,css'.scrollTop(0);
+});</script>
+<!-- jqueryゾーンここまで -->
+
+
+</body></html>
